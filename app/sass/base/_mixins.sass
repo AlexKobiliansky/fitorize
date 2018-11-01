@@ -11,6 +11,10 @@
 			src: url('#{$file-path}.eot')
 			src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype')
 
-
 @mixin mt($time)
 	transition: all $time ease
+
+@mixin bg()
+	background-position: center center
+	background-size: cover
+	background-repeat: no-repeat
