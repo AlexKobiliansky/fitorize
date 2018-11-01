@@ -7,6 +7,19 @@ $(document).ready(function() {
     });
 
 
+    function heightses() {
+        if ($(window).width()>=481) {
+            $(".adv-item-desc").height('auto').equalHeights();
+        }
+    }
+
+    $(window).resize(function() {
+        heightses();
+    });
+
+    heightses();
+
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
