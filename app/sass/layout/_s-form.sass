@@ -1,0 +1,44 @@
+.s-form
+  +bg()
+
+form
+  padding: 20px 0 60px
+  p
+    font-size: 24px
+    font-weight: 500
+    margin: 35px 0
+  .s-title
+    text-align: left
+    color: #fff
+    font-size: 60px
+  label
+    display: block
+    position: relative
+  input
+    font-weight: 300
+    line-height: 1
+    padding: 14px 20px
+    width: 100%
+    background-color: rgba(#000, .4)
+    border: 1px solid #fff
+    border-radius: 5px
+    font-size: 24px
+  .btn
+    font-size: 24px
+    width: 100%
+    line-height: 1
+    padding: 16px 20px
+    border-radius: 5px
+    white-space: nowrap
+    &.disabled
+      filter: grayscale(.8)
+      &:hover
+        background-color: $accent-orrange
+        box-shadow: none
+  .form-error
+    color: rgb(185, 74, 72)
+    position: absolute
+    top: -20px
+    font-size: 14px
+
+

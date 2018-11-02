@@ -10,21 +10,21 @@
     box-sizing: border-box
 
 *::-webkit-input-placeholder
-  color: #666
+  color: #fff
   opacity: 1
 
 *:-moz-placeholder
-  color: #666
+  color: #fff
   opacity: 1
 
 
 
 *::-moz-placeholder
-  color: #666
+  color: #fff
   opacity: 1
 
 *:-ms-input-placeholder
-  color: #666
+  color: #fff
   opacity: 1
 
 body input:focus:required:invalid,
@@ -86,6 +86,15 @@ a, input, textarea, button
   &:hover, &:active, &:focus
     color: #fff
     background-color: $accent-green
+
+.btn-orange
+  background-color: $accent-orrange
+  color: #fff
+  border: none
+  box-shadow: 3px 3px transparent
+  &:hover
+    background-color: darken($accent-orrange, 5%)
+    box-shadow: 3px 3px darken($accent-orrange, 25%)
 
 
 .s-title
