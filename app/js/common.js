@@ -10,6 +10,8 @@ $(document).ready(function() {
     function heightses() {
         if ($(window).width()>=481) {
             $(".adv-item-desc").height('auto').equalHeights();
+            $(".price-item-desc").height('auto').matchHeight();
+            $(".price-item-name").height('auto').matchHeight();
         }
 
         if ($(window).width()>=991) {
