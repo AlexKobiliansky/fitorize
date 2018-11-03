@@ -10,7 +10,10 @@ $(document).ready(function() {
     function heightses() {
         if ($(window).width()>=481) {
             $(".adv-item-desc").height('auto').equalHeights();
+        }
 
+        if ($(window).width()>=991) {
+            $(".programs-group").height('auto').equalHeights();
         }
         $('.partner-item .item-desc').matchHeight();
         $('.head-partner-item .item-desc').matchHeight();
