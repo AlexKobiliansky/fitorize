@@ -17,6 +17,7 @@ $(document).ready(function() {
         $('.prod-item-name').matchHeight();
         $('.prod-item-price').matchHeight();
         $('.prod-item').matchHeight();
+        $('.bonus-item h3').matchHeight();
     }
 
     $(window).resize(function() {
