@@ -4,6 +4,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
+  .income-item
+    padding-left: 20px
 
   .partners-wrap
     .head-partner-item
@@ -27,9 +29,12 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 
+  .income-item
+    &-desc
+      font-size: 14px
+
   .s-partnership
     background-size: 0
-
 
   form
     .s-title
@@ -56,6 +61,17 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 
+  .income-item
+    &-desc
+      font-size: 18px
+
+  .s-income
+    .s-title
+      width: 400px
+      font-size: 36px
+    .title-wrap
+      &:before, &:after
+        width: calc(50% - 210px)
 
   .partners-wrap
     .head-partner-item
@@ -115,6 +131,28 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+
+  .s-income
+    .s-title
+      padding-top: 30px
+
+  .income-item
+    &-desc
+      font-size: 14px
+      padding-left: 15px
+    &-icon
+      width: 60px
+      height: 60px
+
+  .s-income
+    .s-title
+      width: 100%
+      border-radius: 0
+      &:before, &:after
+        display: none
+    .title-wrap
+      &:before, &:after
+        display: none
 
   .partners-wrap
     .head-partner-item

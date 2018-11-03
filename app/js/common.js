@@ -10,12 +10,13 @@ $(document).ready(function() {
     function heightses() {
         if ($(window).width()>=481) {
             $(".adv-item-desc").height('auto').equalHeights();
-            $('.prod-item-name').matchHeight();
-            $('.prod-item-price').matchHeight();
-            $('.prod-item').matchHeight();
-            $('.partner-item .item-desc').matchHeight();
-            $('.head-partner-item .item-desc').matchHeight();
+
         }
+        $('.partner-item .item-desc').matchHeight();
+        $('.head-partner-item .item-desc').matchHeight();
+        $('.prod-item-name').matchHeight();
+        $('.prod-item-price').matchHeight();
+        $('.prod-item').matchHeight();
     }
 
     $(window).resize(function() {
