@@ -5,6 +5,17 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 
+  .partners-wrap
+    .head-partner-item
+      .item-desc
+        font-size: 20px
+    .partner-item
+      .item-desc
+        font-size: 13px
+        &:after
+          width: 60px
+          height: 60px
+
   .adv-formula
     font-size: 24px
 
@@ -15,6 +26,10 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+
+  .s-partnership
+    background-size: 0
+
 
   form
     .s-title
@@ -41,6 +56,28 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 
+
+  .partners-wrap
+    .head-partner-item
+      margin-bottom: 20px
+      .item-desc
+        font-size: 16px
+        display: flex
+        align-items: center
+        justify-content: center
+    .partner-item
+      margin-bottom: 20px
+      .item-desc
+        &:after
+          display: none
+      &:nth-child(odd)
+        .item-desc
+          padding-right: 15px
+          padding-left: 15px
+      &:nth-child(even)
+        .item-desc
+          padding-left: 15px
+          padding-right: 15px
 
   form
     input
@@ -79,6 +116,22 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 
+  .partners-wrap
+    .head-partner-item
+      margin-bottom: 10px
+      padding-left: 5px
+      padding-right: 5px
+      .item-desc
+        font-size: 12px
+    .partner-item
+      margin-bottom: 10px
+      padding-left: 5px
+      padding-right: 5px
+      .item-desc
+        text-align: center
+
+
+
   form
     .s-title
       font-size: 30px
@@ -86,7 +139,6 @@
       margin: 20px 0
       font-size: 14px
       line-height: 1.4
-    input
 
 
   .prod-item

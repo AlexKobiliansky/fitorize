@@ -1,0 +1,60 @@
+.s-partnership
+  padding: 25px 0 35px
+  background-repeat: no-repeat
+  background-size: 240px
+  background-position: center 220px
+
+.partners-wrap
+  margin-top: 25px
+  .head-partner-item
+    margin-bottom: 42px
+    .item-desc
+      text-transform: uppercase
+      font-weight: bold
+      font-size: 24px
+      line-height: 1.5
+      text-align: center
+      border-radius: 20px
+      padding: 22px
+    &:nth-child(odd)
+      .item-desc
+        background-color: #8b8376
+    &:nth-child(even)
+      .item-desc
+        background-color: $accent-green
+  .partner-item
+    margin-bottom: 42px
+    .item-desc
+      min-height: 92px
+      padding-top: 15px
+      padding-bottom: 15px
+      border-radius: 20px
+      display: flex
+      align-items: center
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        width: 75px
+        height: 75px
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: contain
+    &:nth-child(odd)
+      .item-desc
+        background-color: #8b8376
+        padding-left: 35px
+        padding-right: 100px
+        &:after
+          background-image: url('../img/icons/partner-pk.png')
+          right: 20px
+    &:nth-child(even)
+      .item-desc
+        background-color: $accent-green
+        padding-left: 100px
+        padding-right: 35px
+        &:after
+          background-image: url('../img/icons/partner-k.png')
+          left: 20px
+
+.item-desc

@@ -13,6 +13,8 @@ $(document).ready(function() {
             $('.prod-item-name').matchHeight();
             $('.prod-item-price').matchHeight();
             $('.prod-item').matchHeight();
+            $('.partner-item .item-desc').matchHeight();
+            $('.head-partner-item .item-desc').matchHeight();
         }
     }
 
