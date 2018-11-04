@@ -92,9 +92,9 @@ a, input, textarea, button
   color: #fff
   border: none
   box-shadow: 3px 3px transparent
+  +mt(.5s)
   &:hover
-    background-color: darken($accent-orrange, 5%)
-    box-shadow: 3px 3px darken($accent-orrange, 25%)
+    box-shadow: 3px 3px darken(rgba($accent-orrange, .6), 15%)
 
 
 .s-title
@@ -109,4 +109,80 @@ a, input, textarea, button
 
 .owl-carousel .owl-item img
   width: auto
+
+
+.popup-form
+  max-width: 800px
+  margin-left: auto
+  margin-right: auto
+  padding: 30px 30px 50px
+  border-radius: 10px
+  border: 1px solid $accent-green
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center center
+  h2
+    font-size: 24px
+    font-weight: 500
+    text-align: center
+    span
+      font-size: 32px
+    margin-bottom: 30px
+  label
+    margin-bottom: 20px
+  .mfp-close
+    color: #fff
+
+
+//my-mfp-zoom-in
+.my-mfp-zoom-in
+  .zoom-anim-dialog, .popup-form
+    opacity: 0
+    transition: all 0.8s ease-in-out
+    transform: scale(0.5)
+  &.mfp-ready .zoom-anim-dialog, &.mfp-ready .popup-form
+    opacity: 1
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog, &.mfp-removing .popup-form
+    transform: scale(0.5)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.8s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: .6
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+
+#toTop1
+  width: 40px
+  height: 40px
+  background-color: $accent-orrange
+  color: #eee
+  text-align: center
+  font-size: 28px
+  line-height: 40px
+  position: fixed
+  right: 20px
+  bottom: 40px
+  cursor: pointer
+  +mt(.3s)
+  border-radius: 3px
+  opacity: 0
+  z-index: 100
+  &:hover
+    opacity: 1!important
+
+.preloader
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+  z-index: 999
+  background: url("../img/preloader.gif") no-repeat center center #fff
+
 

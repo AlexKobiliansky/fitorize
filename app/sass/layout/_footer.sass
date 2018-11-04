@@ -1,0 +1,20 @@
+.main-foot
+  font-size: 14px
+  color: #000
+  padding: 25px 0
+  position: relative
+  .foot-content
+    display: flex
+    justify-content: center
+    align-items: center
+  .dev-block
+    position: absolute
+    right: 15px
+    bottom: 15px
+    font-size: 12px
+    a
+      color: $accent-green
+      text-transform: uppercase
+      +mt(.3s)
+      &:hover
+        color: darken($accent-green, 15%)
